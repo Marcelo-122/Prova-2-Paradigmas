@@ -1,17 +1,47 @@
-=== PLANEJAMENTO DE MONTAGEM DE SATÉLITE ===
+PLANEJAMENTO DE MONTAGEM DE SATÉLITE
 
-=== SEQUÊNCIA DE MONTAGEM ===
+SEQUÊNCIA DE MONTAGEM
 1. estrutura_base (5 dias, equipe_mecanica)
-2. antena_principal (4 dias, equipe_comunicacao)
-3. bateria (2 dias, equipe_energia)
-4. computador_bordo (3 dias, equipe_eletronica)
-5. paineis_solares (3 dias, equipe_energia)
-6. propulsores (4 dias, equipe_propulsao)
-7. sensores (2 dias, equipe_eletronica)
-8. sistema_termico (2 dias, equipe_termica)
-9. tanque_combustivel (3 dias, equipe_propulsao)
-10. transceptor (2 dias, equipe_comunicacao)
+2. antena_principal (4 dias, equipe_comunicacao) [após estrutura_base]
+3. bateria (2 dias, equipe_energia) [após estrutura_base]
+4. computador_bordo (3 dias, equipe_eletronica) [após estrutura_base]
+5. paineis_solares (3 dias, equipe_energia) [após estrutura_base]
+6. propulsores (4 dias, equipe_propulsao) [após estrutura_base]
+7. sensores (2 dias, equipe_eletronica) [após computador_bordo]
+8. sistema_termico (2 dias, equipe_termica) [após estrutura_base]
+9. tanque_combustivel (3 dias, equipe_propulsao) [após estrutura_base]
+10. transceptor (2 dias, equipe_comunicacao) [após antena_principal]
 
-=== RESUMO ===
-Componentes: 10
+CRONOGRAMA
+Dias 1-5: estrutura_base
+Dias 6-9: antena_principal
+Dias 10-11: bateria
+Dias 12-14: computador_bordo
+Dias 15-17: paineis_solares
+Dias 18-21: propulsores
+Dias 22-23: sensores
+Dias 24-25: sistema_termico
+Dias 26-28: tanque_combustivel
+Dias 29-30: transceptor
+
 Tempo total: 30 dias
+Caminho crítico: estrutura_base, antena_principal, computador_bordo
+
+RESUMO
+Componentes: 10
+Dependências: 9
+Equipes: 6
+Tempo total: 30 dias
+
+=== ALOCAÇÃO DE TÉCNICOS ===
+
+  estrutura_base: [joao,maria]
+  antena_principal: [pedro]
+  bateria: [carlos,ana]
+  computador_bordo: [lucia,roberto]
+  paineis_solares: [carlos,ana]
+  propulsores: [fernando]
+  sensores: [lucia,roberto]
+  sistema_termico: [beatriz]
+  tanque_combustivel: [fernando]
+  transceptor: [pedro]
