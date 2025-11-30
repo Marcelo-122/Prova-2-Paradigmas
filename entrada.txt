@@ -1,0 +1,30 @@
+% COMPONENTES
+componente(estrutura_base, 5, equipe_mecanica).
+componente(paineis_solares, 3, equipe_energia).
+componente(bateria, 2, equipe_energia).
+componente(antena_principal, 4, equipe_comunicacao).
+componente(transceptor, 2, equipe_comunicacao).
+componente(computador_bordo, 3, equipe_eletronica).
+componente(sensores, 2, equipe_eletronica).
+componente(propulsores, 4, equipe_propulsao).
+componente(tanque_combustivel, 3, equipe_propulsao).
+componente(sistema_termico, 2, equipe_termica).
+
+% DEPENDÊNCIAS (X depende de Y)
+dependencia(paineis_solares, estrutura_base).
+dependencia(bateria, estrutura_base).
+dependencia(antena_principal, estrutura_base).
+dependencia(transceptor, antena_principal).
+dependencia(computador_bordo, estrutura_base).
+dependencia(sensores, computador_bordo).
+dependencia(propulsores, estrutura_base).
+dependencia(tanque_combustivel, estrutura_base).
+dependencia(sistema_termico, estrutura_base).
+
+% EQUIPES
+equipe(equipe_mecanica, [joao, maria]).
+equipe(equipe_energia, [carlos, ana]).
+equipe(equipe_comunicacao, [pedro]).
+equipe(equipe_eletronica, [lucia, roberto]).
+equipe(equipe_propulsao, [fernando]).
+equipe(equipe_termica, [beatriz]).
