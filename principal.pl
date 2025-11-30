@@ -12,6 +12,9 @@
 % Carrega as dependências
 :- consult('dependencias.pl').
 
+% Carrega o módulo de técnicos
+:- consult('tecnicos.pl').
+
 % Predicado principal
 main :-
     write('=== SISTEMA DE PLANEJAMENTO DE SATÉLITE ==='), nl, nl,
